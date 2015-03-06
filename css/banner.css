@@ -1,0 +1,31 @@
+html{
+  box-sizing:boder-box;
+}
+
+*, *::before, *::after{
+  box-sizing:inherit;
+}
+
+img{
+  width:100%;
+}
+
+header{
+  position:relative;
+  overflow:hidden;
+}
+
+header:hover h1{
+  bottom:1em;
+}
+
+h1{
+  position:absolute;
+  bottom:-1em;
+  margin:0;
+  color:darkblue;
+  text-align:center;
+  /*background-color:lightblue;*/
+  width:100%;
+  transition:all 250ms linear;
+}
