@@ -1,0 +1,43 @@
+html{
+  box-sizing:boder-box;
+}
+
+*, *::before, *::after{
+  box-sizing:inherit;
+}
+
+.box{
+  padding: 6em;
+  background-color: red;
+}
+
+.box-1 h2{
+  position: absolute;
+  background-color:blue;
+  bottom:0;
+  right:0;
+}
+
+.box-1{
+  position:relative;
+}
+
+.box-2{
+  background-color: green;
+  position: absolute;
+  /*can move objects around*/
+  top: 2em;
+  /*can also move bottom, right and left*/
+  right:50%;
+  /*can also do percents*/
+  transform:translateX(50%);
+  /*shifts*/
+}
+
+.box-3{
+  background-color: yellow;
+  position: fixed;
+  /*coordinates to the screen, does not scroll*/
+  left:0;
+  bottom:0;
+}
